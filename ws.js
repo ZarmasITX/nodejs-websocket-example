@@ -7,8 +7,8 @@ wss.on('connection', function (ws) {
     console.log('received: %s', message)
   })
 
-  /*setInterval(
-    () => ws.send(`${new Date()}`),
+  setInterval(
+    () => ws.send("{}"),
     1000
-  )*/
+  )
 })
